@@ -1,0 +1,44 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon --exec npm run build",
+    "build": "webpack --watch",
+    "build-babel": "babel src/index.js --out-file=public/scripts/app.js --watch",
+    "dev-server": "webpack-dev-server",
+    "serve": "live-server public/"
+  },
+  "keywords": [],
+  "author": "Okonji Chukwunonso",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "babel-watch": "^7.0.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-modal": "^3.8.1",
+    "sass-loader": "^7.1.0",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  }
+}

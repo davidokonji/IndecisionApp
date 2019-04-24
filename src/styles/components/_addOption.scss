@@ -1,0 +1,15 @@
+.add-option{
+    display: flex;
+    padding: $minsize;
+}
+.add-option-input{
+    flex-grow: 1;
+    background: $dark-blue;
+    border-bottom: .3rem solid darken($color: $dark-blue, $amount: 10%);
+    margin-right: $s-size;
+    color: white;
+    padding: $s-size;
+}
+.add-option-input::placeholder{
+    color: $offWhite;
+}
